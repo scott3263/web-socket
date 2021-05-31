@@ -11,7 +11,7 @@ const io = socketIO(server);
 
 app.use(express.static(path.join(__dirname,"src")));
 
-const PORT = 3300;
+const PORT = 3200;
 
 io.on("connection", function(socket)  {
     socket.on("chatting", function(data) {
